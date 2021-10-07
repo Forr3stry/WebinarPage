@@ -74,6 +74,7 @@ p {
     grid-template-areas: "head head" "nav  main" "foot  foot";
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto;
+    gap: 5px;
 }
 
 #page>header {
@@ -83,6 +84,7 @@ p {
     text-align: left;
     padding: 15px;
     height: auto;
+
 }
 
 #page>nav {
