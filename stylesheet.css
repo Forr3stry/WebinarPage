@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 :root {
     --medfont: 16px;
     --largefont: 24px;
@@ -16,6 +20,8 @@ button {
     transition: linear-gradient 0.5s ease;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
+    top: 0;
 }
 
 button:hover {
@@ -26,22 +32,6 @@ a {
     text-decoration: none;
 }
 
-.container {
-    background-color: #253746;
-    border-radius: 20px;
-    padding: 30px;
-    border: 5px;
-    text-align: center;
-}
-
-.navbar {
-    background-color: #E72176;
-    border-radius: 20px;
-    padding: 30px;
-    border: 5px;
-    text-align: center;
-}
-
 h1 {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: var(--largefont);
@@ -49,7 +39,7 @@ h1 {
     font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
-    color: white;
+    color: black;
     display: inline-block;
     text-align: left;
 }
@@ -66,19 +56,52 @@ p {
     text-align: left;
 }
 
-body {
+ul {
+    list-style-type: none;
+}
+
+#page {
     display: grid;
-    grid-template-areas: "header header header" "menu center center" "menu center center";
+    grid-template-areas: "head head" "nav  main" "nav  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
 }
 
-#a {
-    grid-area: "header";
+#page>header {
+    grid-area: head;
+    background-color: #98A4AF;
+    border-radius: 20px;
+    text-align: left;
+    padding: 15px;
+    height: 20vh;
 }
 
-#b {
-    grid-area: menu;
+#page>nav {
+    grid-area: nav;
+    background-color: #E81E75;
+    border-radius: 20px;
+    padding: 30px;
+    border: 5px;
+    text-align: center;
+    height: 60vh;
 }
 
-#c {
-    grid-area: center;
+#page>main {
+    grid-area: main;
+    background-color: #253746;
+    border-radius: 20px;
+    padding: 30px;
+    border: 5px;
+    text-align: center;
+    height: 60vh;
+}
+
+#page>footer {
+    grid-area: foot;
+    background-color: #E81E75;
+    border-radius: 20px;
+    padding: 30px;
+    border: 5px;
+    text-align: center;
+    height: 10vh;
 }
