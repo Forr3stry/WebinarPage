@@ -8,7 +8,7 @@ html {
 }
 
 button {
-    background-color: #E72176;
+    background-color: #253746;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -25,13 +25,27 @@ button {
 }
 
 button:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
 }
 
 a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+    padding-bottom: 5px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: var(--medfont);
+    font-weight: 700;
+    line-height: 26.4px;
+    color: black;
+    text-align: left;
+}
+
+li {
+    padding-bottom: 5px;
+}
 h1 {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: var(--largefont);
@@ -41,17 +55,6 @@ h1 {
     line-height: 26.4px;
     color: black;
     display: inline-block;
-    text-align: left;
-}
-
-ul {
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-size: var(--medfont);
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    color: black;
     text-align: left;
 }
 
