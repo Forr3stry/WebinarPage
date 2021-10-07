@@ -79,7 +79,7 @@ p {
     border-radius: 20px;
     text-align: left;
     padding: 15px;
-    height: 15vh;
+    height: auto;
 }
 
 #page>nav {
@@ -89,7 +89,7 @@ p {
     padding: 30px;
     border: 5px;
     text-align: center;
-    height: 60vh;
+    height: auto;
 }
 
 #page>main {
@@ -99,7 +99,7 @@ p {
     padding: 30px;
     border: 5px;
     text-align: center;
-    height: 60vh;
+    height: auto;
 }
 
 #page>footer {
